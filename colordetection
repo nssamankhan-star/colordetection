@@ -1,0 +1,159 @@
+ 🎨 Color Detection using Pandas
+
+ 📌 Project Overview
+
+This project is a **Color Detection Application** built using **Python**, **OpenCV** and **Pandas**. It detects the color of any pixel in an image when the user double-clicks on it. The application displays the closest matching color name along with its RGB values.
+
+The project uses a CSV dataset containing color names and RGB values, which is loaded using the Pandas library.
+
+---
+
+## 🚀 Features
+
+* Detects the nearest color from an image.
+* Displays:
+
+  * Color Name
+  * Red (R) Value
+  * Green (G) Value
+  * Blue (B) Value
+* Interactive mouse double-click event.
+* Uses OpenCV for image processing.
+* Uses Pandas to read and manage the color dataset.
+
+---
+
+## 🛠️ Technologies Used
+
+* Python 3.x
+* OpenCV
+* Pandas
+* NumPy
+
+---
+
+## 📂 Project Structure
+
+```
+Color-Detection/
+│
+├── color_detection.py      # Main Python script
+├── colors.csv              # Dataset containing color names and RGB values
+├── image.jpg               # Input image
+├── README.md               # Project documentation
+└── requirements.txt        # Required Python packages
+```
+
+---
+
+## 📥 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/color-detection.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd color-detection
+```
+
+3. Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
+pip install opencv-python pandas numpy
+```
+
+---
+
+## ▶️ How to Run
+
+Run the Python script:
+
+```bash
+python color_detection.py
+```
+
+A window displaying the image will open.
+
+* Double-click anywhere on the image.
+* The application will display the nearest detected color name and its RGB values.
+
+---
+
+## 📊 Dataset
+
+The project uses a **colors.csv** file containing:
+
+* Color Name
+* Hex Value
+* Red (R)
+* Green (G)
+* Blue (B)
+
+Pandas reads this dataset and compares RGB values to find the closest matching color.
+
+---
+
+## 🧠 How It Works
+
+1. Load the image using OpenCV.
+2. Read the color dataset using Pandas.
+3. Capture mouse double-click events.
+4. Retrieve the RGB values of the selected pixel.
+5. Compare the pixel's RGB values with the dataset.
+6. Display the closest matching color name on the image.
+
+---
+
+## 📸 Example Output
+
+```
+Color Name: Sky Blue
+R = 135
+G = 206
+B = 235
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Detect multiple colors in real-time using a webcam.
+* Display HEX color codes.
+* Add a graphical user interface (GUI).
+* Support custom color datasets.
+* Improve color matching using advanced algorithms.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
